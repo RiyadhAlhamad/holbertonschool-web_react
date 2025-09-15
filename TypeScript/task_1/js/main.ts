@@ -20,17 +20,17 @@ const printTeacher: printTeacherFunction = (firstName: string, lastName: string)
 };
 
 const teacher3: Teacher = {
-  firstName: 'John',
+  firstName: 'Riyadh',
   fullTimeEmployee: false,
-  lastName: 'Doe',
-  location: 'London',
+  lastName: 'Alhamad',
+  location: 'Zulfi',
   contract: false,
 };
 
 const director1: Directors = {
-  firstName: 'John',
-  lastName: 'Doe',
-  location: 'London',
+  firstName: 'Nasser',
+  lastName: 'Alhamad',
+  location: 'Riyadh',
   fullTimeEmployee: true,
   numberOfReports: 17,
 };
@@ -39,7 +39,7 @@ console.log(teacher3);
 console.log(director1);
 
 // Test printTeacher function
-console.log(printTeacher("John", "Doe"));
+console.log(printTeacher("Riyadh", "Nasser"));
 
 // StudentClass interfaces and implementation
 interface StudentConstructor {
@@ -70,6 +70,6 @@ class StudentClass implements StudentClassInterface {
 }
 
 // Test StudentClass
-const student1 = new StudentClass("John", "Doe");
+const student1 = new StudentClass("Riyadh", "Nasser");
 console.log(student1.displayName());
 console.log(student1.workOnHomework());
